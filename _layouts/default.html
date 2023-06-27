@@ -63,6 +63,12 @@ layout: compress
     {% endif %}
 d
     {% include header.html %}
+    <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.hero_img }}">
+      <div class="hero__wrap">
+        <h1 class="hero__title">About me</h1>
+        <p class="hero__meta">{{ site.description }}</p>
+      </div>
+    </div>
 
 
     <main class="site__content">
@@ -70,14 +76,7 @@ d
         <div class="container">
           <div class="home-section" itemscope="" itemtype="http://schema.org/Blog">
 
-              <img class="img-profile" src="./assets/img/{{site.img-profile}}" alt="Image Profile">
-              <div class="text-content">
-                <h1>About me</h1>
-                <p class="about-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque temporibus repellat vel. Error, provident quibusdam est, rerum ipsam at adipisci dolor excepturi laborum nam, neque nesciunt minima fuga ut ab?</p>
-                <p class="about-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque temporibus repellat vel. Error, provident quibusdam est, rerum ipsam at adipisci dolor excepturi laborum nam, neque nesciunt minima fuga ut ab?</p>
-                <p class="about-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque temporibus repellat vel. Error, provident quibusdam est, rerum ipsam at adipisci dolor excepturi laborum nam, neque nesciunt minima fuga ut ab?</p>
-              </div>
-
+             
           </div>
         </div>
       </section>

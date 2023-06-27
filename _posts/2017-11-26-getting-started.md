@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arduino Designs
-featured-img: sleek
+featured-img: sleek.jpg
 mathjax: true
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 

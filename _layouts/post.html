@@ -19,41 +19,6 @@ layout: compress
 
 {% include header.html %}
 
-  {% if page.featured-img %}
-  <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg">
-  {% else %}
-  <div class="hero dark-bg">
-  {% endif %}
-    <div class="hero__wrap">
-      {% if post.categories or page.categories %}
-        <div class="hero__categories">
-          {% if post %}
-            {% assign categories = post.categories %}
-          {% else %}
-            {% assign categories = page.categories %}
-          {% endif %}
-          {% for category in categories %}
-            <a class="label" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-            {% unless forloop.last %}&nbsp;{% endunless %}
-          {% endfor %}
-        </div>
-      {% endif %}
-      <h1 class="hero__title">{{ page.title }}</h1>
-      <p class="hero__meta">
-        <span>
-          <time>{{ page.date | date_to_string }}</time>&nbsp;&middot;
-        </span>
-        <span>
-            {% assign words = content | number_of_words %}
-              {% if words < 360 %}
-                1 min
-              {% else %}
-                {{ words | divided_by:180 }} mins
-            {% endif %} read
-        </span>
-      </p>
-    </div>
-  </div>
 
   <main class="site__content">
     <div class="container">
@@ -93,21 +58,8 @@ layout: compress
         </div>
       </div>
     </div>
-
-    {% if site.disqus.shortname %}
-
-    <div class="comments">
-      <div class="container">
-        <div class="post-content">
-
-          {% include disqus.html %}
-
-        </div>
-      </div>
-    </div>
-
-    {% endif %}
-
+  
+   
   </main>
 
   {% include footer.html %}

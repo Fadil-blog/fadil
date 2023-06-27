@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Photovoltaic solar system
-featured-img: emile-perron-190221
+featured-img: emile-perron-190221.jpg
 categories: Guides
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 ---

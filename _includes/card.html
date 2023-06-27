@@ -1,10 +1,8 @@
 <style>
   .post-card{
-    width: 70%;
-    margin-left: 180px;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    flex: 45%;
   } 
+
   @media screen and (max-width: 480px) {
     .post-card{
     width: 90%;
@@ -16,12 +14,11 @@
 </style>
 <div class="post-card" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
   
-  <a target="_blank" href="https://just-the-docs.com/docs{{post.url}}">
+  <a target="_blank" href="{{ post.url | relative_url }}">
     {% if post.featured-img %}
       <figure class="post-card__thumb">
         <img 
-          src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{post.featured-img}}_placehold.jpg"
-          data-srcset="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{post.featured-img}}_thumb.jpg, {{ site.url }}{{ site.baseurl }}/assets/img/posts/{{post.featured-img}}_thumb@2x.jpg 2x"
+          src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{post.featured-img}}"
           class="lazyload blur"
           alt="{{post.title}}"
         />
