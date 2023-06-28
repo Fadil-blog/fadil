@@ -21,12 +21,15 @@
         .header a:hover{
           color: rgb(215, 227, 237);
         }
+        .items-title{
+          font-size: 19px !important;
+        }
       </style>
       <nav class="header__links">
         <div class="container header__links-wrapper">
           {% for item in site.navigation %}
             <a class="header__link" href="{{ item.link | relative_url }}" itemprop="url">
-              <span itemprop="name">{{ item.name }}</span>
+              <span class="items-title" itemprop="name">{{ item.name }}</span>
             </a>
           {% endfor %}
         </div>
