@@ -8,95 +8,69 @@ layout: compress
 
 <body class="site">
 
-{% if site.google_tag_manager %}
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-{% endif %}
-
 {% include header.html %}
 
-  {% if page.featured-img %}
-  <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}">
-  {% else %}
-  <div class="hero dark-bg">
-  {% endif %}
-    <div class="hero__wrap">
-      
-      <h1 class="hero__title">{{ page.title }}</h1>
-      <p class="hero__meta">
-        <span>
-          <time>{{ page.date | date_to_string }}</time>&nbsp;&middot;
-        </span>
-        <span>
-            {% assign words = content | number_of_words %}
-              {% if words < 360 %}
-                1 min
-              {% else %}
-                {{ words | divided_by:180 }} mins
-            {% endif %} read
-        </span>
-      </p>
-    </div>
-  </div>
 
-  <main class="site__content">
+<style>
+  .site__content{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar{
+    display: flex;
+    flex-direction: column !important;
+    margin-top: 60px;
+    position: fixed;
+  }
+
+ul{
+  list-style-type: none;
+}
+.anchor-text{
+  text-decoration: none !important;
+  color: black;
+  border-bottom: 0px !important;
+  margin-top: -10px !important;
+}
+li{
+  line-height: 5px !important;
+}
+</style>
+
+  <div class="site__content">
+    <div class="nav-bar">
+      <h1 style="margin-left: 40px; margin-top: 0px;">Overview</h1>
+      <hr>
+      {% for items  in site.posts %}
+
+      
+        <ul>
+            <li><a class="anchor-text" href="{{ items.url | relative_url }}">{{items.title}}</a></li>
+        </ul>
+      {% endfor %}
+    </div>
+    <style>
+      .vl {
+        border-left: 1px solid rgb(59, 100, 142);
+        height: auto;
+        margin-left: 250px;
+      }
+      </style>
+      </head>
+      <body>
+      
+      
+      <div class="vl"></div>
     <div class="container">
       <article class="post-content" itemprop="articleBody">
 
         {{ content }}
 
       </article>
-      <div class="post-content controls__inner">
-        <div class="controls__item prev">
-          {% if page.previous.url %}
+    </div> 
+  </div>
 
-          <span>Previous</span>
-          <a href="{{page.previous.url | relative_url }}">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11">
-                    <path fill="fillColor" d="M5.647 1.718c.37-.434.323-1.09-.106-1.465A1.016 1.016 0 0 0 4.095.36L.25 4.875a1.05 1.05 0 0 0 .017 1.378l3.95 4.407c.38.424 1.03.456 1.448.07a1.05 1.05 0 0 0 .07-1.468l-3.34-3.725 3.253-3.819z"/>
-                  </svg>
-              </span>
-            {{page.previous.title | strip_html | truncate: 30}}
-          </a>
-          {% endif %}
-        </div>
 
-        <div class="controls__item next">
-          {% if page.next.url %}
-          <span>Next</span>
-          <a href="{{page.next.url | relative_url }}">
-            {{page.next.title | strip_html | truncate: 30}}
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11">
-                  <path fill="#fillColor" d="M.353 9.282c-.37.434-.323 1.09.106 1.465a1.016 1.016 0 0 0 1.446-.107L5.75 6.125a1.05 1.05 0 0 0-.017-1.378L1.784.34A1.015 1.015 0 0 0 .336.27a1.05 1.05 0 0 0-.07 1.468l3.34 3.725L.353 9.282z"/>
-                </svg>
-              </span>
-          </a>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-
-    {% if site.disqus.shortname %}
-
-    <div class="comments">
-      <div class="container">
-        <div class="post-content">
-
-          {% include disqus.html %}
-
-        </div>
-      </div>
-    </div>
-
-    {% endif %}
-
-  </main>
 
   {% include footer.html %}
   {% include mathjax.html %}
