@@ -1,9 +1,17 @@
+<style>
+  .header__logo .header__logo--container {
+    width: 168px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+</style>
 <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
   <div class="container">
     <div class="header__inner">
       <a class="header__logo" href="{{ '/' | relative_url }}">
         <div class="header__logo--container">
-          {% include logo.html %}
+          <p>Fadil Isamotu</p>
         </div>
       </a>
       <style>
@@ -23,6 +31,7 @@
         }
         .items-title{
           font-size: 19px !important;
+          font-weight: bolder !important;
         }
       </style>
       <nav class="header__links">
