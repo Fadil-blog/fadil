@@ -22,7 +22,7 @@
 </style>
 <div class="post-card" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
   
-  <a target="_blank" href="{{ post.url | relative_url }}">
+  <a target="_self" href="{{ post.url | relative_url }}">
     {% if post.featured-img %}
       <figure class="post-card__thumb">
         <img 
