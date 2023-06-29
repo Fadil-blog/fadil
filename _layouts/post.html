@@ -20,7 +20,8 @@ layout: compress
     display: flex;
     flex-direction: column !important;
     margin-top: 60px;
-    position: fixed;
+    overflow: hidden !important;
+    padding-right: 20px;
   }
 
 ul{
@@ -56,18 +57,28 @@ li{
       <h1 style="margin-left: 40px; margin-top: 0px;">Overview</h1>
       <hr>
       {% for items  in site.posts %}
-
       
+      {% if items.category == "parent" or items.category == "children"  %}
         <ul>
-            <li><a class="anchor-text" href="{{ items.url | relative_url }}">{{items.title}}</a></li>
+          {% if items.category == "parent" %}
+            <li><a class="anchor-text" href="{{ items.url | relative_url }}"><b>{{items.title}}</b></a></li>
+            {% endif %}
+            {% if items.category == "children" %}
+            
+            <li><a class="" href="{{ items.url | relative_url }}">{{items.title}}</a></li>
+            
+            {% endif %}
+
+            
         </ul>
+        {% endif %}
       {% endfor %}
     </div>
     <style>
       .vl {
         border-left: 1px solid rgb(59, 100, 142);
         height: auto;
-        margin-left: 250px;
+        margin-left: 0px;
       }
       </style>
       </head>
@@ -79,7 +90,7 @@ li{
       <article class="post-content" itemprop="articleBody">
 
         {{ content }}
-
+        <h2><a href="#"><i class="fas fa-fighter-jet"></i> Top</a></h2>
       </article>
     </div> 
   </div>
