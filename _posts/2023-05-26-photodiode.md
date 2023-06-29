@@ -3,24 +3,11 @@ layout: post
 title: Photovoltaic solar system
 featured-img: giphy.gif
 category: children
+permalink: /overview/photovoltaic-solar-system/photodiode/
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 ---
 
-From [adam-p/markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-##### Table of Contents
-[Headers](#headers)
-[Emphasis](#emphasis)
-[Lists](#lists)
-[Links](#links)
-[Images](#images)
-[Code and Syntax Highlighting](#code)
-[Tables](#tables)
-[Blockquotes](#blockquotes)
-[Inline HTML](#html)
-[Horizontal Rule](#hr)
-[Line Breaks](#lines)
-[Youtube videos](#videos)
 
 <a name="headers"/>
 ## Headers

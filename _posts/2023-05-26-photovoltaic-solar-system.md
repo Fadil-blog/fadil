@@ -2,10 +2,10 @@
 layout: post
 title: Photovoltaic solar system
 featured-img: giphy.gif
-categories: Guides
-parent:
-  - name: Photodiode
 category: parent
+parent_nav:
+  - name: Photodiode
+    link: /photovoltaic-solar-system/photodiode/
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 ---
 
