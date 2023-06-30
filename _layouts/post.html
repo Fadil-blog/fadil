@@ -65,28 +65,29 @@ li{
   .post-content{
     margin: 40px 0px 0px -255px !important;
     max-width: 23.5rem;
+    margin-left: 200px;
+  }
+  .nav-bar{
   }
 }
 </style>
 
   <div class="site__content">
     <div class="nav-bar">
-      <h1 style="margin-left: 40px; margin-top: 0px;">Overview</h1>
-      <hr>
+      <h1 style="margin-left: 40px; margin-top: 0px; color: rgb(127, 127, 127) !important;">Overview</h1>
       <div class="underline-flex">
       {% for items  in site.posts %}
-      
-      {% if items.category == "parent" or items.category == "children"  %}
-        
+
           {% if items.category == "parent" %}
+          
             <div><a class="anchor-text" href="{{ items.url | relative_url }}"><b>{{items.title}}</b></a></div>
-            {% endif %}
-            {% for i  in items.parent_nav %}
+            
+            {% for i in items.parent_nav %}
             
             <div><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></div>
-            {% endfor %}  
-        
-        {% endif %}
+            {% endfor %} 
+          
+            {% endif %}
       {% endfor %}
       </div>
     </div>
