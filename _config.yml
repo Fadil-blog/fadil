@@ -7,7 +7,7 @@ description: > # Meta description of Homepage
   Google search results) and in your feed.xml site description.
 baseurl: "/home" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-img-profile: koenigsegg-jesko-christian-von-koenigsegg-goodwood-20072021.webp
+img-profile: 1688121331677.png
 
 github: https://github.com/Fadil-1
 linkedin: https://www.linkedin.com/in/fadil-isamotu-b2b0241a1/
@@ -21,7 +21,7 @@ navigation: # Navigation links
 tagline: >
   Customize on line 29 under the config.yml file
 
-hero_img: koenigsegg-jesko-christian-von-koenigsegg-goodwood-20072021.webp # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: 1688121331677.png # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 
 disqus:

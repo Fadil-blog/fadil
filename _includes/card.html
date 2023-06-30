@@ -44,7 +44,7 @@
       </figure>
     {% endif %}
   </a>
-  <a target="_blank" class="post-card__inner" href="#">
+  <a target="_self" class="post-card__inner" href="{{ post.url | relative_url }}">
     <div class="post-card__header">
       <center>
         <h2>{{ post.title | strip_html | truncate: 50 }}</h2>
