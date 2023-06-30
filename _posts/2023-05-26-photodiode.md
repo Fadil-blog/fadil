@@ -3,7 +3,7 @@ layout: post
 title: Photovoltaic solar system
 featured-img: giphy.gif
 category: children
-permalink: /overview/photovoltaic-solar-system/photodiode/
+permalink: /projects/photovoltaic-solar-system/photodiode/
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 ---
 

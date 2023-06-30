@@ -5,7 +5,7 @@ featured-img: giphy.gif
 category: parent
 parent_nav:
   - name: Photodiode
-    link: /photovoltaic-solar-system/photodiode/
+    permalink: /projects/photovoltaic-solar-system/photodiode/
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 ---
 

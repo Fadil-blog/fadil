@@ -6,7 +6,7 @@ mathjax: true
 category: parent
 parent_nav:
   - name: Arduino
-    permalink: /arduino-designs/arduino/
+    permalink: /projects/arduino-designs/arduino/
    
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 
