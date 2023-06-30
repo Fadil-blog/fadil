@@ -8,6 +8,17 @@ layout: compress
 
   <body class="site">
 <style>
+  .site {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    JUSTIFY-CONTENT: end;
+}
   @media screen and (max-width: 480px){
     .home-section{
     display: flex;
@@ -55,6 +66,16 @@ layout: compress
   .hero__meta{
     font-style: italic;
   }
+  .hero {
+    margin: 3.75rem auto 0;
+    min-height: 33.25rem;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
 </style>
     {% if site.google_tag_manager %}
 
@@ -64,7 +85,7 @@ layout: compress
       <!-- End Google Tag Manager (noscript) -->
 
     {% endif %}
-d
+
     {% include header.html %}
     <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.hero_img }}">
       <div class="hero__wrap">
