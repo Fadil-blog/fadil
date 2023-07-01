@@ -76,14 +76,14 @@ li{
       {% for items  in site.posts %}
 
           {% if items.category == "parent" %}
-          
-            <div><a class="anchor-text" href="{{ items.url | relative_url }}"><b>{{items.title}}</b></a></div>
+          {% if items.url == items.parent_url %}
+            <div><a class="anchor-text" href="{{ items.url | relative_url }}"><b>{{items.title}} </b></a></div>
             
             {% for i in items.parent_nav %}
             
             <div><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></div>
             {% endfor %} 
-          
+            {% endif %}
             {% endif %}
       {% endfor %}
       </div>

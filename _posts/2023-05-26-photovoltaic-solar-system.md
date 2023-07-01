@@ -3,6 +3,7 @@ layout: post
 title: Photovoltaic solar system
 featured-img: giphy.gif
 category: parent
+parent_url: /photovoltaic-solar-system/
 parent_nav:
   - name: Photodiode
     permalink: /projects/photovoltaic-solar-system/photodiode/

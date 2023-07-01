@@ -3,6 +3,7 @@ title: "8 Bits Computers"
 featured-img: giphy.webp
 layout: post
 category: parent
+parent_url: /8-bit-computers/
 parent_nav:
   - name: 8 bytes
     permalink: /projects/8-bit-computers/8-byte
