@@ -52,7 +52,7 @@ a{
   color: rgb(0, 0, 0);
 }
 li{
-  list-style-type: circle;
+  list-style-type: upper-roman;
 }
 .children-nav:hover{
   color: rgb(0, 0, 0);
@@ -101,7 +101,7 @@ li{
       {% if items.similar == "8-bit-computers" %}
           {% if items.category == "parent" %}
 
-            <div ><a class="anchor-text"  href="{{ items.url | relative_url }}"><b>{{items.title}} </b></a></div>
+            <div ><p class="anchor-text"><b>{{items.title}} </b></p></div>
             
             {% for i in items.parent_nav %}
             

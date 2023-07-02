@@ -1,6 +1,7 @@
 ---
 layout: post-photovoltaic-solar-system
 title: Photovoltaic system
+similar: Photovoltaic solar
 featured-img: giphy.gif
 category: children
 permalink: /projects/photovoltaic-solar-system/photodiode/

@@ -3,7 +3,7 @@ layout: post-photovoltaic-solar-system
 title: Photovoltaic solar
 featured-img: giphy.gif
 category: parent
-similar: photovoltaic-solar-system
+similar: Photovoltaic solar
 parent_url: /photovoltaic-solar-system/
 parent_nav:
   - name: Photodiode
