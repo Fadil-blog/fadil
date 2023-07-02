@@ -18,12 +18,9 @@ layout: compress
     flex-direction: row;
   }
   .nav-bar{
-    display: flex;
-    flex-direction: column !important;
     margin-top: 60px;
-    overflow: hidden;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin-left: 80px;
+    
   }
 
 .underline-flex{
@@ -31,8 +28,9 @@ layout: compress
   flex-direction: column;
   row-gap: 15px;
   margin-left: 40px;
-  margin-top: 60px;
-  position: absolute;
+  margin-top: 30px;
+  margin-bottom: 60px;
+
 }
 a{
   text-decoration: none !important;
@@ -40,7 +38,7 @@ a{
   border-bottom: 0px !important;
   
 }
-.anchor-text:active, .children-nav:active {
+ .children-nav:active {
   background-color: rgba(181, 181, 181, 0.942);
 }
 .anchor-text{
@@ -52,16 +50,16 @@ a{
 }
 .anchor-text:hover{
   color: rgb(0, 0, 0);
-  font-weight: bold;
-}
 
+}
+li{
+    list-style-type: decimal;
+}
 .children-nav:hover{
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
-li{
-  line-height: 5px !important;
-}
+
 
 @media screen and (max-width: 480px) {
   .site__content{
@@ -72,7 +70,8 @@ li{
     visibility: hidden;
   }
   .nav-bar{
-    margin-left: -25px !important;
+    margin-left: 25px !important;
+    margin-bottom: -250px;
     
   }
   #post_content{
@@ -90,10 +89,10 @@ li{
 @media screen and (max-width: 1400px) {
   .post-content{
     margin: 0px 0px 0px -200px !important;
-   
   }
 }
 </style>
+
 
   <div class="site__content">
     <div class="nav-bar" id="nav-bar">
@@ -107,7 +106,7 @@ li{
             
             {% for i in items.parent_nav %}
             
-            <div ><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></div>
+            <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
             {% endfor %} 
             {% endif %}
             {% endif %}
@@ -118,7 +117,7 @@ li{
       .vl {
         border-left: 1px solid rgb(59, 100, 142);
         height: auto;
-        margin-left: 100px;
+        margin-left: 10px;
       }
       </style>
       </head>

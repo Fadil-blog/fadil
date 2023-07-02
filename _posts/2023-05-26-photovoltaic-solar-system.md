@@ -1,6 +1,6 @@
 ---
 layout: post-photovoltaic-solar-system
-title: Photovoltaic solar system
+title: Photovoltaic solar
 featured-img: giphy.gif
 category: parent
 similar: photovoltaic-solar-system

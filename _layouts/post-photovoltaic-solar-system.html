@@ -13,87 +13,85 @@ layout: compress
 
 <style>
 
-  .site__content{
-    display: flex;
-    flex-direction: row;
-  }
-  .nav-bar{
-    display: flex;
-    flex-direction: column !important;
-    margin-top: 60px;
-    overflow: hidden;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-.underline-flex{
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  margin-left: 40px;
-  margin-top: 60px;
-  position: absolute;
-}
-a{
-  text-decoration: none !important;
-  color: grey;
-  border-bottom: 0px !important;
+    .site__content{
+      display: flex;
+      flex-direction: row;
+    }
+    .nav-bar{
+      margin-top: 60px;
+      margin-left: 80px;
+      
+    }
   
-}
-.anchor-text:active, .children-nav:active {
-  background-color: rgba(181, 181, 181, 0.942);
-}
-.anchor-text{
-  font-size: 19px;
-}
-.children-nav{
-  font-size: 17px;
-
-}
-.anchor-text:hover{
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-
-.children-nav:hover{
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-li{
-  line-height: 5px !important;
-}
-
-@media screen and (max-width: 480px) {
-  .site__content{
+  .underline-flex{
     display: flex;
     flex-direction: column;
+    row-gap: 15px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  
   }
-  .vl{
-    visibility: hidden;
-  }
-  .nav-bar{
-    margin-left: -25px !important;
+  a{
+    text-decoration: none !important;
+    color: grey;
+    border-bottom: 0px !important;
     
   }
-  #post_content{
-    margin: 282px 0px 0px 0px !important;
-    max-width: 23.5rem;
+ .children-nav:active {
+    background-color: rgba(181, 181, 181, 0.942);
   }
-}
-@media screen and (max-width: 1100px) {
-  .post-content{
-    margin: 40px 0px 0px -255px !important;
-    max-width: 23.5rem;
-    margin-left: 200px;
+  .anchor-text{
+    font-size: 19px;
   }
-}
-@media screen and (max-width: 1400px) {
-  .post-content{
-    margin: 0px 0px 0px -200px !important;
-   
+  .children-nav{
+    font-size: 17px;
+  
   }
-}
-</style>
+  .anchor-text:hover{
+    color: rgb(0, 0, 0);
+  }
+  li{
+      list-style-type: upper-alpha;
+  }
+  .children-nav:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .site__content{
+      display: flex;
+      flex-direction: column;
+    }
+    .vl{
+      visibility: hidden;
+    }
+    .nav-bar{
+      margin-left: 25px !important;
+      margin-bottom: -250px;
+      
+    }
+    #post_content{
+      margin: 282px 0px 0px 0px !important;
+      max-width: 23.5rem;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .post-content{
+      margin: 40px 0px 0px -255px !important;
+      max-width: 23.5rem;
+      margin-left: 200px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .post-content{
+      margin: 0px 0px 0px -200px !important;
+    }
+  }
+  </style>
+  
 
   <div class="site__content">
     <div class="nav-bar" id="nav-bar">
@@ -107,7 +105,7 @@ li{
             
             {% for i in items.parent_nav %}
             
-            <div ><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></div>
+            <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
             {% endfor %} 
             {% endif %}
             {% endif %}
@@ -118,7 +116,7 @@ li{
       .vl {
         border-left: 1px solid rgb(59, 100, 142);
         height: auto;
-        margin-left: 100px;
+        margin-left: 80px;
       }
       </style>
       </head>

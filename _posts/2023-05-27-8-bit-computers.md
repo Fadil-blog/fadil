@@ -6,7 +6,13 @@ category: parent
 similar: 8-bit-computers
 parent_url: /8-bit-computers/
 parent_nav:
-  - name: 8 bytes
+  - name: RAM
+    permalink: /projects/8-bit-computers/8-byte
+  - name: ALU
+    permalink: /projects/8-bit-computers/8-byte
+  - name: Registers
+    permalink: /projects/8-bit-computers/8-byte
+  - name: CPU
     permalink: /projects/8-bit-computers/8-byte
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 ---

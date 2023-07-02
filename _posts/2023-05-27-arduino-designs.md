@@ -9,6 +9,42 @@ parent_url: /arduino-designs/
 parent_nav:
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+
+    
    
 summary: This is a testing summary. It is done to give the number of text showing on the cards.
 
