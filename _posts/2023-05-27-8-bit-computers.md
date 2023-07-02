@@ -1,8 +1,9 @@
 ---
 title: "8 Bits Computers"
 featured-img: giphy.webp
-layout: post
+layout: post-8-bit-computers
 category: parent
+similar: 8-bit-computers
 parent_url: /8-bit-computers/
 parent_nav:
   - name: 8 bytes

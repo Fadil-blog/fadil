@@ -1,0 +1,145 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+
+{% include head.html %}
+
+<body class="site">
+
+{% include header.html %}
+
+
+<style>
+
+  .site__content{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar{
+    display: flex;
+    flex-direction: column !important;
+    margin-top: 60px;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+.underline-flex{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-left: 40px;
+  margin-top: 60px;
+  position: absolute;
+}
+a{
+  text-decoration: none !important;
+  color: grey;
+  border-bottom: 0px !important;
+  
+}
+.anchor-text:active, .children-nav:active {
+  background-color: rgba(181, 181, 181, 0.942);
+}
+.anchor-text{
+  font-size: 19px;
+}
+.children-nav{
+  font-size: 17px;
+
+}
+.anchor-text:hover{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.children-nav:hover{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+li{
+  line-height: 5px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .site__content{
+    display: flex;
+    flex-direction: column;
+  }
+  .vl{
+    visibility: hidden;
+  }
+  .nav-bar{
+    margin-left: -25px !important;
+    
+  }
+  #post_content{
+    margin: 282px 0px 0px 0px !important;
+    max-width: 23.5rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .post-content{
+    margin: 40px 0px 0px -255px !important;
+    max-width: 23.5rem;
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .post-content{
+    margin: 0px 0px 0px -200px !important;
+   
+  }
+}
+</style>
+
+  <div class="site__content">
+    <div class="nav-bar" id="nav-bar">
+      <h1 style="margin-left: 40px; margin-top: 0px; color: rgb(127, 127, 127) !important;">Overview</h1>
+      <div class="underline-flex" id="myDIV">
+      {% for items  in site.posts %}
+
+          {% if items.similar == "photovoltaic-solar-system" %}
+          {% if items.category == "parent" %}
+            <div ><a class="anchor-text"  href="{{ items.url | relative_url }}"><b>{{items.title}} </b></a></div>
+            
+            {% for i in items.parent_nav %}
+            
+            <div ><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></div>
+            {% endfor %} 
+            {% endif %}
+            {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+    <style>
+      .vl {
+        border-left: 1px solid rgb(59, 100, 142);
+        height: auto;
+        margin-left: 100px;
+      }
+      </style>
+      </head>
+      <body>
+      
+      
+      <div class="vl"></div>
+    <div class="container">
+      <article class="post-content" id="post_content" itemprop="articleBody">
+
+        {{ content }}
+        <h4><a href="#">back to top</a></h4>
+      </article>
+    </div> 
+  </div>
+
+
+
+  {% include footer.html %}
+  {% include mathjax.html %}
+
+</body>
+
+</html>

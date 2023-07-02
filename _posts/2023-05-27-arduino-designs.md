@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: post-arduino
 title: Arduino Designs
 featured-img: tumblr_oc6m5xG3NW1txeruoo2_r1_500.gif
 mathjax: true
 category: parent
+similar: arduino
 parent_url: /arduino-designs/
 parent_nav:
   - name: Arduino
