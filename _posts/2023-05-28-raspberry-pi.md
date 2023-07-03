@@ -4,6 +4,7 @@ title: "Raspberry Pi"
 featured-img: c4b19969def51164ea4ad9a290a217bf.gif
 category: parent
 similar: raspberry
+overview: Overview
 parent_url: /raspberry-pi/
 parent_nav:
   - name: Pi

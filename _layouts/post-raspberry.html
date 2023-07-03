@@ -24,36 +24,39 @@ layout: compress
   }
 
 .underline-flex{
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  margin-left: 40px;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 20;
+  left: 20;
+  overflow-x: hidden;
+  padding-top: 20px;
+  
 
 }
 a{
   text-decoration: none !important;
-  color: grey;
   border-bottom: 0px !important;
   
 }
- .children-nav:active {
+.children-nav:active {
   background-color: rgba(181, 181, 181, 0.942);
 }
 .anchor-text{
-  font-size: 19px;
+  font-size: 20px;
+  color:rgb(84, 84, 84);
 }
 .children-nav{
-  font-size: 17px;
-
+  font-size: 18px;
+  margin-top: 20px;
+  color:rgb(84, 84, 84);
 }
 .anchor-text:hover{
   color: rgb(0, 0, 0);
-
 }
 li{
-    list-style-type: decimal;
+    list-style-type: upper-alpha;
 }
 .children-nav:hover{
   color: rgb(0, 0, 0);
@@ -93,16 +96,16 @@ li{
 }
 </style>
 
-
   <div class="site__content">
     <div class="nav-bar" id="nav-bar">
-      <h1 style="margin-left: 40px; margin-top: 0px; color: rgb(127, 127, 127) !important;">Overview</h1>
       <div class="underline-flex" id="myDIV">
       {% for items  in site.posts %}
 
-          {% if items.similar == "raspberry" %}
-          {% if items.category == "parent" %}
-            <div ><p class="anchor-text"><b>{{items.title}} </b></p></div>
+      {% if items.similar == "raspberry" %}
+      {% if items.category == "parent" %}
+            <div ><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
+            <br>
+            <h2>{{items.overview}}</h2>
             
             {% for i in items.parent_nav %}
             
@@ -117,7 +120,7 @@ li{
       .vl {
         border-left: 1px solid rgb(59, 100, 142);
         height: auto;
-        margin-left: 10px;
+        margin-left: 250px;
       }
       </style>
       </head>
@@ -129,7 +132,7 @@ li{
       <article class="post-content" id="post_content" itemprop="articleBody">
 
         {{ content }}
-        <h4><a href="#">back to top</a></h4>
+        <h4><a style="color: rgb(90, 90, 90);" href="#">back to top</a></h4>
       </article>
     </div> 
   </div>

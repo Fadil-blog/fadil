@@ -3,6 +3,7 @@ title: "8 Bits Computers"
 featured-img: giphy.webp
 layout: post-8-bit-computers
 category: parent
+overview: Overview
 similar: 8-bit-computers
 parent_url: /8-bit-computers/
 parent_nav:
