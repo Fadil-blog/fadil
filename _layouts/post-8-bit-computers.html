@@ -25,12 +25,11 @@ layout: compress
 
 .underline-flex{
   height: 100%;
-  width: 200px;
+  width: 160px;
   position: fixed;
   z-index: 1;
   top: 20;
   left: 20;
-  right: 30;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -55,7 +54,7 @@ a{
   color: rgb(0, 0, 0);
 }
 li{
-    list-style-type: upper-roman;
+    list-style-type: lower-alpha;
 }
 .children-nav:hover{
   color: rgb(0, 0, 0);
@@ -63,7 +62,7 @@ li{
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 765px) {
   .site__content{
     display: flex;
     flex-direction: column;
@@ -76,21 +75,73 @@ li{
     margin-bottom: -250px;
     
   }
+  .header-1 {
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+  padding: 15px 20px;
+  position:fixed;
+
+  margin-top:  61px;
+  left:0;
+  z-index:9;
+  }
   #post_content{
-    margin: 282px 0px 0px 0px !important;
+    margin: 314px 0px 0px 0px !important;
     max-width: 23.5rem;
   }
+  .sidebar {
+  background:#fff;
+  width: 100%;
+  position:fixed;
+  margin-top:20px;
+  left:-260px;
+  height:100%;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+  padding-top:90px;
+  transition:all 0.3s ease-out;
 }
-@media screen and (max-width: 1100px) {
-  .post-content{
-    margin: 40px 0px 0px -255px !important;
-    max-width: 23.5rem;
-    margin-left: 200px;
+.sidebarshow {
+  left:0;
+  width: 100% !important;
+}
+}
+
+@media screen and (max-width: 1025px) {
+  .site__content{
+    display: flex;
+    flex-direction: column;
   }
+  .vl{
+    visibility: hidden;
+  }
+  .nav-bar{
+   
+    visibility: hidden;
+  }
+  #post_content{
+    max-width: 50rem;
+    margin-left: 0px;
+  }
+  .underline-flex{
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  margin-left: 50px;
+  left: 20;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-@media screen and (max-width: 1400px) {
+}
+@media screen and (min-width: 1026px) {
   .post-content{
-    margin: 0px 0px 0px -200px !important;
+    margin: 80px 0px 0px -55px !important;
+  }
+  .sidebar{
+    visibility: hidden;
+  }
+  .header-1{
+    visibility: hidden;
   }
 }
 </style>
@@ -100,7 +151,7 @@ li{
       <div class="underline-flex" id="myDIV">
       {% for items  in site.posts %}
 
-          {% if items.similar == "8-bit-computers" %}
+          {% if items.similar == "arduino" %}
           {% if items.category == "parent" %}
             <div ><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
             <br>
@@ -121,6 +172,129 @@ li{
         height: auto;
         margin-left: 250px;
       }
+      .header-1 {
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+  padding: 15px 20px;
+  position:fixed;
+  margin-top:  61px;
+  left:0;
+  z-index:9;
+}
+
+button {
+  background:transparent;
+  border:none;
+  width:30px;
+  height:30px;
+  cursor:pointer; 
+  outline:0;
+}
+
+.toggle span {
+  width:100%;
+  height:3px;
+  background:#555;
+  display:block;
+  position:relative;
+  coursor:pointer;
+}
+
+.toggle span:before,
+.toggle span:after {
+  content:'';
+  position:absolute;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#555;
+  transition: all 0.3s ease-out;
+}
+
+.toggle span:before {
+  top:-8px;
+}
+
+.toggle span:after {
+  top:8px;
+}
+
+.toggle span.toggle {
+  background:transparent;
+}
+
+.toggle span.toggle:before {
+  top:0;
+  transform:rotate(-45deg);
+  background:#4CAF50;
+  
+}
+
+.toggle span.toggle:after {
+  top:0;
+  transform:rotate(45deg);
+  background:#4CAF50;
+}
+
+.sidebar {
+  background:#fff;
+  width: 30%;
+  position:fixed;
+  margin-top:20px;
+  left:-310px;
+  height:83.5%;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+  padding-top:90px;
+  transition:all 0.3s ease-out;
+}
+
+.sidebar ul {
+  list-style:none;
+}
+
+.sidebar ul li {
+  display:block;
+}
+
+.sidebar ul li a {
+  padding:8px 15px;
+  font-size:16px;
+  color:#222;
+  font-family:arial;
+  text-decoration:none;
+  display:block;
+  position:relative;
+  z-index:1;
+  transition:all 0.3s ease-out;
+  font-weight:500;
+}
+
+.sidebar ul li a:before {
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:50%;
+  right:50%;
+  transform:translate(-50%,-50%);
+  width:0;
+  height:1px;
+  background:#4CAF50;
+  z-index:-1;
+  transition:all 0.3s ease-out;
+}
+
+.sidebar ul li a:hover:before {
+  width:100%;
+}
+
+.sidebar ul li a:hover {
+  color:#4CAF50;
+}
+
+.sidebarshow {
+  left:0;
+
+}
       </style>
       </head>
       <body>
@@ -136,11 +310,52 @@ li{
     </div> 
   </div>
 
+  <header class="header-1">
+    <div class="header_in">
+      <button type="button" class="toggle" id="toggle">
+        <span></span>
+       </button>
+   </div>
+ </header>
+ 
+ <div class="sidebar" id='sidebar'>
 
+    <div class="underline-flex" id="myDIV">
+    {% for items  in site.posts %}
 
+        {% if items.similar == "8-bit-computers" %}
+        {% if items.category == "parent" %}
+          <div ><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
+          <br>
+          <h2>{{items.overview}}</h2>
+          
+          {% for i in items.parent_nav %}
+          
+          <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
+          {% endfor %} 
+          {% endif %}
+          {% endif %}
+    {% endfor %}
+    </div>
+ </div>
   {% include footer.html %}
   {% include mathjax.html %}
-
+  <script>
+    var btn = document.querySelector('.toggle');
+var btnst = true;
+btn.onclick = function() {
+  if(btnst == true) {
+   
+    document.querySelector('.toggle span').classList.add('toggle');
+    document.getElementById('sidebar').classList.add('sidebarshow');
+    btnst = false;
+  }else if(btnst == false) {
+    document.querySelector('.toggle span').classList.remove('toggle');
+    document.getElementById('sidebar').classList.remove('sidebarshow');
+    btnst = true;
+  }
+}
+ </script>
 </body>
 
 </html>
