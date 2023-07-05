@@ -118,12 +118,21 @@ li{
    
     visibility: hidden;
   }
+  .anchor-text{
+  font-size: 25px;
+  color:rgb(84, 84, 84);
+}
+.children-nav{
+  font-size: 20px;
+  margin-top: 20px;
+  color:rgb(84, 84, 84);
+}
   #post_content{
     max-width: 50rem;
     margin-left: 0px;
   }
   .underline-flex{
-  height: 100%;
+  height: 5%;
   width: 160px;
   position: fixed;
   z-index: 1;
@@ -134,6 +143,7 @@ li{
 }
 }
 @media screen and (min-width: 1026px) {
+  
   .post-content{
     margin: 80px 0px 0px -55px !important;
   }
@@ -151,7 +161,7 @@ li{
       <div class="underline-flex" id="myDIV">
       {% for items  in site.posts %}
 
-          {% if items.similar == "arduino" %}
+          {% if items.similar == "8-bit-computers" %}
           {% if items.category == "parent" %}
             <div ><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
             <br>
@@ -293,7 +303,6 @@ button {
 
 .sidebarshow {
   left:0;
-
 }
       </style>
       </head>

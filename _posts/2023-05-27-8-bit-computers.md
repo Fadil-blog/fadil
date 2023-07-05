@@ -15,7 +15,7 @@ parent_nav:
     permalink: /projects/8-bit-computers/8-byte
   - name: CPU
     permalink: /projects/8-bit-computers/8-byte
-summary: This is a testing summary. It is done to give the number of text showing on the cards.
+    
 ---
 
 ## Hello world welcome to my website

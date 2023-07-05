@@ -132,6 +132,15 @@ li{
   overflow-x: hidden;
   padding-top: 20px;
 }
+.anchor-text{
+  font-size: 20px;
+  color:rgb(84, 84, 84);
+}
+.children-nav{
+  font-size: 18px;
+  margin-top: 20px;
+  color:rgb(84, 84, 84);
+}
 }
 @media screen and (min-width: 1026px) {
   .post-content{
@@ -151,7 +160,7 @@ li{
       <div class="underline-flex" id="myDIV">
       {% for items  in site.posts %}
 
-          {% if items.similar == "arduino" %}
+          {% if items.similar == "raspberry" %}
           {% if items.category == "parent" %}
             <div ><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
             <br>
