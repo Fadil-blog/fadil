@@ -33,6 +33,17 @@
           font-size: 19px !important;
           font-weight: bolder !important;
         }
+        .toggle_button{
+        
+    background: transparent;
+    border: none;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    margin-right: 10px;
+        }
       </style>
       <nav class="header__links">
         <div class="container header__links-wrapper">
@@ -44,13 +55,22 @@
         </div>
       </nav>
       <div class="header__toggle" id="header__toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+        <button class="toggle_button" id="togglebutton" onmouseleave="myButton1()" onclick="myButton()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </div>
 </header>
 <script>
+      
 
+    function myButton(){    
+            document.getElementById("header-1").style.visibility = "hidden"
+  }
+  function myButton1(){      
+            document.getElementById("header-1").style.visibility = "visible"
+  }
 </script>

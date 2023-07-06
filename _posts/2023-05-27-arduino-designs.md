@@ -32,7 +32,102 @@ parent_nav:
     permalink: /projects/arduino-designs/arduino/
   - name: Programming
     permalink: /projects/arduino-designs/arduino/
-
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
+  - name: SSD
+    permalink: /projects/arduino-designs/arduino/
+  - name: Music
+    permalink: /projects/arduino-designs/arduino/
+  - name: Programming
+    permalink: /projects/arduino-designs/arduino/
 
     
    
@@ -41,6 +136,11 @@ summary: This is a testing summary. It is done to give the number of text showin
 ---
 
 ## Hello world, welcome to my website.
+
+
+![Alt text]({{ site.url }}{{ site.baseurl }}/assets/img/posts/giphy.webp)
+
+![Alt text]({{ site.url }}{{ site.baseurl }}/assets/img/posts/1688123497021.jpg)
 
 
 ## Hello world welcome to my website
