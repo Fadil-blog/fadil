@@ -1,6 +1,6 @@
 ---
 layout: post-arduino
-title: Arduino Designs
+title: Arduino Designs (Do it yourself. Feels cody!!!)
 featured-img: tumblr_oc6m5xG3NW1txeruoo2_r1_500.gif
 mathjax: true
 overview: Overview
@@ -8,7 +8,7 @@ category: parent
 similar: arduino
 parent_url: /arduino-designs/
 parent_nav:
-  - name: Arduino
+  - name: Arduino and solar designs 
     permalink: /projects/arduino-designs/arduino/
   - name: SSD
     permalink: /projects/arduino-designs/arduino/
@@ -65,6 +65,9 @@ summary: This is a testing summary. It is done to give the number of text showin
 
 ---
 
+
+## Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website.
+## Hello world, welcome to my website.
 ## Hello world, welcome to my website.
 
 
