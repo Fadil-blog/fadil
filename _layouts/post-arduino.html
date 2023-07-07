@@ -49,7 +49,7 @@ li{
       height: calc(100vh - 70px);
       position: fixed;
       background-color: transparent;
-      left: 0px;
+      margin-left: 20%;
       margin-top: 70px;
       transition: left 0.3s;
       overflow: auto; /* Added overflow property */
@@ -97,9 +97,9 @@ a{
   font-weight: bold;
 }
 .content {
-      margin-left: 390px;
+      margin-left: 32%;
       margin-top: 39px;
-  padding-right: 150px;
+      margin-right: 15%;
       transition: margin-left 0.3s;
     }
     .vl {
@@ -405,10 +405,30 @@ a{
       <article>
 
         {{ content }}
+
+        {% for items  in site.posts %}
+        
+        {% if items.similar == "arduino" %}
+
+        {% if items.category == "parent" %}
+        <span class="">
+          <span style="font-size: 15px; font-weight: bold; color: #333333;"> <i class="fas fa-calendar-alt"></i> Updated: </span><time>{{ items.date_uploaded}}</time>
+        </span>
+ 
+        {%  elsif items.category == "children" %}
+        <span class="">
+          <span style="font-size: 15px; font-weight: bold; color: #333333;"> <i class="fas fa-calendar-alt"></i> Updated: </span><time>{{ items.date_uploaded}}</time>
+        </span>
+      <br>
+      <br>
         <h4><a style="color: rgb(90, 90, 90);" href="#">back to top</a></h4>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
       </article>
     </div> 
   </div>
+
   </div>
   {% include footer.html %}
 

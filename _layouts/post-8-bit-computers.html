@@ -43,13 +43,14 @@ body::-webkit-scrollbar-thumb {
 li{
   list-style-type: none;
 }
-  @media screen and (min-width: 1026px) {
+
+    @media screen and (min-width: 1026px) {
     .sidebar {
       width:40%;
       height: calc(100vh - 70px);
       position: fixed;
       background-color: transparent;
-      left: 0px;
+      margin-left: 20%;
       margin-top: 70px;
       transition: left 0.3s;
       overflow: auto; /* Added overflow property */
@@ -97,9 +98,9 @@ a{
   font-weight: bold;
 }
 .content {
-      margin-left: 390px;
+      margin-left: 32%;
       margin-top: 39px;
-  padding-right: 150px;
+      margin-right: 15%;
       transition: margin-left 0.3s;
     }
     .vl {
@@ -107,139 +108,7 @@ a{
         height: auto;
         margin-left: 250px;
       }
-  }
-  @media screen and (max-width: 1025px) {
-    .header-1 {
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    padding: 5px 17px;
-    width: 70px;
-    height: 50px;
-    position: fixed;
-    top: 72px;
-    left: 20px;
-    z-index: 9;
-}
-
-
-button {
-  background:transparent;
-  border:none;
-  width:46px;
-  height:36px;
-  cursor:pointer; 
-  outline:0;
-}
-
-.toggle span {
-  width:100%;
-  height:3px;
-  background:#333333;
-  display:block;
-  position:relative;
-  coursor:pointer;
-  margin-left: -6px;
-}
-
-.toggle span:before,
-.toggle span:after {
-  content:'';
-  position:absolute;
-  left:0;
-  width:100%;
-  height:100%;
-  background:#555;
-  transition: all 0.3s ease-out;
-}
-
-.toggle span:before {
-  top:-8px;
-}
-
-.toggle span:after {
-  top:8px;
-}
-
-.toggle span.toggle {
-  background:transparent;
-}
-
-.toggle span.toggle:before {
-  top:0;
-  transform:rotate(-45deg);
-  background:#101010;
-  
-}
-
-.toggle span.toggle:after {
-  top:0;
-  transform:rotate(45deg);
-  background:#0b0b0b;
-}
-
-.sidebar {
-  background:#fff;
-  width: 40%;
-  position:fixed;
-  margin-top:20px;
-  left:-420px;
-  height:83.5%;
-  box-shadow:0 2px 8px rgba(0,0,0,0.2);
-  padding-top:90px;
-  transition:all 0.3s ease-out;
-  overflow-y: scroll;
-}
-
-
-.sidebarshow {
-  left:0;
-
-}
-    .underline-flex{
-  width: calc(40% - 20px);
-  height: 80%;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden;
-  padding-top: 148px;
-  margin-left: 20px;
-  position: fixed;
-   top: 0;
-   bottom: 45px; /* added */
-   min-height: 0 !important; /* added */
-}
-a{
-  text-decoration: none !important;
-  border-bottom: 0px !important;
-}
-.children-nav:active {
-  background-color: rgba(181, 181, 181, 0.942);
-}
-.anchor-text{
-  font-size: 20px;
-  color:rgb(84, 84, 84);
-}
-.children-nav{
-  font-size: 18px;
-  margin-top: 20px;
-  color:rgb(84, 84, 84);
-}
-.anchor-text:hover{
-  color: rgb(0, 0, 0);
-}
-
-.children-nav:hover{
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-.content {
-      margin-left: 20px;
-      margin-top: 148px;
-      margin-right: 20px;
-      transition: margin-left 0.3s;
-    }
-  }
-  @media screen and (max-width: 600px) {
+  }  @media screen and (max-width: 600px) {
     .header-1 {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
