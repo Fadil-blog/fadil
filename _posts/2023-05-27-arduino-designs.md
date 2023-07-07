@@ -18,11 +18,15 @@ parent_nav:
     permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
+    permalink: /projects/arduino-designs/arduino/
   - name: SSD
     permalink: /projects/arduino-designs/arduino/
   - name: Music
     permalink: /projects/arduino-designs/arduino/
   - name: Programming
+    permalink: /projects/arduino-designs/arduino/
+  - name: Arduino
     permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
@@ -34,12 +38,6 @@ parent_nav:
     permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
   - name: SSD
@@ -50,12 +48,6 @@ parent_nav:
     permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
   - name: SSD
@@ -64,69 +56,7 @@ parent_nav:
     permalink: /projects/arduino-designs/arduino/
   - name: Programming
     permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
-    permalink: /projects/arduino-designs/arduino/
-  - name: Arduino
-    permalink: /projects/arduino-designs/arduino/
-  - name: SSD
-    permalink: /projects/arduino-designs/arduino/
-  - name: Music
-    permalink: /projects/arduino-designs/arduino/
-  - name: Programming
+  - name: Arduino 23
     permalink: /projects/arduino-designs/arduino/
 
     

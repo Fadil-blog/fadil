@@ -9,34 +9,146 @@ layout: compress
 <body class="site">
 
 {% include header.html %}
-
-
 <style>
-
-  .site__content{
-    display: flex;
-    flex-direction: row;
-  }
-  .nav-bar{
-    margin-top: 60px;
-    margin-left: 80px;
-    
-  }
-
-.underline-flex{
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 20;
-  left: 20;
-  overflow-x: hidden;
-  padding-top: 20px;
+  body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
 }
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(8, 8, 8);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(36, 36, 36);  /* creates padding around scroll thumb */
+}
+li{
+  list-style-type: upper-alpha;
+}
+  @media screen and (min-width: 1026px) {
+    .sidebar {
+      width: 40%;
+      height: calc(100vh - 70px);
+      position: fixed;
+      background-color: transparent;
+      left: 0px;
+      margin-top: 70px;
+      transition: left 0.3s;
+      overflow: auto; /* Added overflow property */
+      
+    }
+    .toggle-btn {
+      visibility: hidden;
+    }
+    .underline-flex{
+    width: 185px;
+    height: 70%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 50px;
+    margin-left: 40px;
+    position: fixed;
+   top: 20px;
+   bottom: 45px; /* added */
+   min-height: 0 !important; /* added */
+  }
 a{
   text-decoration: none !important;
   border-bottom: 0px !important;
   
+}
+.children-nav:active {
+  background-color: rgba(181, 181, 181, 0.942);
+}
+.anchor-text{
+  font-size: 20px;
+  color:rgb(84, 84, 84);
+}
+.children-nav{
+  font-size: 18px;
+  margin-top: 20px;
+  color:rgb(84, 84, 84);
+}
+.anchor-text:hover{
+  color: rgb(0, 0, 0);
+}
+
+.children-nav:hover{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.content {
+      margin-left: 250px;
+      margin-top: 70px;
+  padding-right: 150px;
+      transition: margin-left 0.3s;
+    }
+    .vl {
+        border-left: 1px solid rgb(59, 100, 142);
+        height: auto;
+        margin-left: 250px;
+      }
+  }
+  @media screen and (max-width: 1025px) {
+    .header-1 {
+  background:#1D1F1F;
+  padding: 3px 13px;
+  margin-top:  65px;
+  margin-left:20px;
+  z-index:9;
+  position: fixed;
+  box-shadow: 5px 5px 20px gray;
+
+}
+
+#toggle {
+  background:transparent;
+  border:none;
+  width:47px;
+  height:25px;
+  cursor:pointer; 
+  outline:0;
+  color: #fff;
+}
+
+
+
+.sidebar {
+  background:#fff;
+  width: 30%;
+  position:fixed;
+  margin-top:20px;
+  left:-400px;
+  height:83.5%;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+  padding-top:90px;
+  transition:all 0.3s ease-out;
+  overflow-y: scroll;
+}
+
+
+.sidebarshow {
+  left:0;
+
+}
+    .underline-flex{
+  width: calc(40% - 100px);
+  height: 80%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 110px;
+  margin-left: 20px;
+  position: fixed;
+   top: 0;
+   bottom: 45px; /* added */
+   min-height: 0 !important; /* added */
+}
+a{
+  text-decoration: none !important;
+  border-bottom: 0px !important;
 }
 .children-nav:active {
   background-color: rgba(181, 181, 181, 0.942);
@@ -60,195 +172,28 @@ li{
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
-
-
-@media screen and (max-width: 765px) {
-  .site__content{
-    display: flex;
-    flex-direction: column;
+.content {
+      margin-left: 20px;
+      margin-top: 110px;
+      margin-right: 20px;
+      transition: margin-left 0.3s;
+    }
   }
-  .vl{
-    visibility: hidden;
-  }
-  .nav-bar{
-    margin-left: 25px !important;
-    margin-bottom: -250px;
-    
-  }
-  .header-1 {
-  background:#fff;
-  box-shadow:0 2px 5px rgba(0,0,0,0.2);
-  padding: 15px 20px;
-  position:fixed;
-
-  margin-top:  61px;
-  left:0;
-  z-index:9;
-  }
-  #post_content{
-    margin: 314px 0px 0px 0px !important;
-    max-width: 23.5rem;
-  }
-  .sidebar {
-  background:#fff;
-  width: 100%;
-  position:fixed;
-  margin-top:20px;
-  left:-260px;
-  height:100%;
-  box-shadow:0 2px 8px rgba(0,0,0,0.2);
-  padding-top:90px;
-  transition:all 0.3s ease-out;
-}
-.sidebarshow {
-  left:0;
-  width: 100% !important;
-}
-}
-
-@media screen and (max-width: 1025px) {
-  .site__content{
-    display: flex;
-    flex-direction: column;
-  }
-  .vl{
-    visibility: hidden;
-  }
-  .nav-bar{
-   
-    visibility: hidden;
-  }
-  #post_content{
-    max-width: 50rem;
-    margin-left: 0px;
-  }
-  .underline-flex{
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  margin-left: 50px;
-  left: 20;
-  overflow-x: hidden;
-  padding-top: 20px;
-  
-}
-.anchor-text{
-  font-size: 20px;
-  color:rgb(84, 84, 84);
-}
-.children-nav{
-  font-size: 18px;
-  margin-top: 20px;
-  color:rgb(84, 84, 84);
-  overflow-y: auto;
-
-}
-}
-@media screen and (min-width: 1026px) {
-  .post-content{
-    margin-top: 36px;
-    margin-left: -22%;
-  }
-  .sidebar{
-    visibility: hidden;
-  }
-  .header-1{
-    visibility: hidden;
-  }
-  .underline-flex{
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  margin-left: -50px;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-}
-@media screen and (min-width: 1300px) {
-  .post-content{
-    margin-top: 36px;
-    margin-left: -500px;
-  }
-  .sidebar{
-    visibility: hidden;
-  }
-  .header-1{
-    visibility: hidden;
-  }
-  .underline-flex{
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  margin-left: -50px;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-}
-@media screen and (min-width: 1500px) {
-  .post-content{
-    margin-top: 36px;
-    margin-left: -600px;
-  }
-  .sidebar{
-    visibility: hidden;
-  }
-  .header-1{
-    visibility: hidden;
-  }
-  .underline-flex{
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  margin-left: -50px;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-}
-</style>
-
-  <div class="site__content">
-    <div class="nav-bar" id="nav-bar">
-      <div class="underline-flex" id="myDIV">
-      {% for items  in site.posts %}
-
-          {% if items.similar == "arduino" %}
-          {% if items.category == "parent" %}
-            <div ><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
-            <br>
-            <h2>{{items.overview}}</h2>
-            
-            {% for i in items.parent_nav %}
-            
-            <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
-            {% endfor %} 
-            {% endif %}
-            {% endif %}
-      {% endfor %}
-      </div>
-    </div>
-    <style>
-      .vl {
-        border-left: 1px solid rgb(59, 100, 142);
-        height: auto;
-        margin-left: 150px;
-      }
-      .header-1 {
+  @media screen and (max-width: 600px) {
+    .header-1 {
   background:#1D1F1F;
   padding: 3px 13px;
-  margin-top:  65px;
+  margin-top:  70px;
   margin-left:20px;
   z-index:9;
   position: fixed;
+  box-shadow: 5px 5px 20px gray;
 }
 
-button {
+#toggle {
   background:transparent;
   border:none;
-  width:20px;
+  width:47px;
   height:25px;
   cursor:pointer; 
   outline:0;
@@ -259,118 +204,114 @@ button {
 
 .sidebar {
   background:#fff;
-  width: 40%;
+  width: 100%;
   position:fixed;
   margin-top:20px;
-  left:-352px;
+  left:-590px;
   height:83.5%;
   box-shadow:0 2px 8px rgba(0,0,0,0.2);
   padding-top:90px;
   transition:all 0.3s ease-out;
-  overflow: auto;
-  position: absolute;
-  display: block;
+  overflow-y: scroll;
 }
 
-.sidebar ul {
-  list-style:none;
-}
-
-.sidebar ul li {
-  display:block;
-}
-
-.sidebar ul li a {
-  padding:-5px 8px 0px 6px;
-  font-size:16px;
-  color:#222;
-  font-family:arial;
-  text-decoration:none;
-  display:block;
-  z-index:1;
-  transition:all 0.3s ease-out;
-  font-weight:500;
-}
-
-.sidebar ul li a:before {
-  content:'';
-  position:absolute;
-  bottom:0;
-  left:50%;
-  right:50%;
-  transform:translate(-50%,-50%);
-  width:0;
-  height:1px;
-  background:#4CAF50;
-  z-index:-1;
-  transition:all 0.3s ease-out;
-}
-
-.sidebar ul li a:hover:before {
-  width:100%;
-}
-
-.sidebar ul li a:hover {
-  color:#4CAF50;
-}
 
 .sidebarshow {
   left:0;
 
 }
-      </style>
-      </head>
-      <body>
-      
-      
-      <div class="vl"></div>
-    <div class="container">
-      
-      <article class="post-content" id="post_content" itemprop="articleBody">
+    .underline-flex{
+  width: calc(100% - 20px);
+  height: 80%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 110px;
+  margin-left: 20px;
+  position: fixed;
+   top: 0;
+   bottom: 45px; /* added */
+   min-height: 0 !important; /* added */
+}
+a{
+  text-decoration: none !important;
+  border-bottom: 0px !important;
+}
+.children-nav:active {
+  background-color: rgba(181, 181, 181, 0.942);
+}
+.anchor-text{
+  font-size: 20px;
+  color:rgb(84, 84, 84);
+}
+.children-nav{
+  font-size: 18px;
+  margin-top: 20px;
+  color:rgb(84, 84, 84);
+}
+.anchor-text:hover{
+  color: rgb(0, 0, 0);
+}
+li{
+    list-style-type: lower-alpha;
+}
+.children-nav:hover{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.content {
+      margin-left: 20px;
+      margin-top: 110px;
+      transition: margin-left 0.3s;
+    }
+  }
+</style>
+<header class="header-1" id="header-1">
+  <div class="header_in">
+    <button type="button" class="toggle" id="toggle">
+      <span>Menu</span>
+     </button>
+ </div>
+</header>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="underline-flex" >
+    {% for items  in site.posts %}
+
+      {% if items.similar == "arduino" %}
+      {% if items.category == "parent" %}
+        <div><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
+        <br>
+        <h2>{{items.overview}}</h2>
+        
+        {% for i in items.parent_nav %}
+        
+        <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
+        {% endfor %} 
+        {% endif %}
+        {% endif %}
+  {% endfor %}
+    </div>
+  </div>
+  <div class="vl"></div>
+  <!-- Main content -->
+  <div id="content" class="content">
+    
+      <article>
 
         {{ content }}
         <h4><a style="color: rgb(90, 90, 90);" href="#">back to top</a></h4>
       </article>
     </div> 
   </div>
-
-  <header class="header-1" id="header-1">
-    <div class="header_in">
-      <button type="button" class="toggle" id="toggle">
-        <span style="margin-left: -13px; font-size: 13px; font-weight: bold;">Menu</span>
-        
-       </button>
-   </div>
- </header>
- 
- <div class="sidebar" id='sidebar'>
-
-    <ul class="underline-flex" id="myDIV">
-    {% for items  in site.posts %}
-
-        {% if items.similar == "arduino" %}
-        {% if items.category == "parent" %}
-          <li ><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></li>
-          <br>
-          <h2>{{items.overview}}</h2>
-          
-          {% for i in items.parent_nav %}
-          
-          <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
-          {% endfor %} 
-          {% endif %}
-          {% endif %}
-    {% endfor %}
-          </li>
- </div>
+  </div>
   {% include footer.html %}
-  {% include mathjax.html %}
-  <script>
-    var btn = document.querySelector('.toggle');
+
+    <script>
+          var btn = document.querySelector('.toggle');
 var btnst = true;
 btn.onclick = function() {
   if(btnst == true) {
-   
     document.querySelector('.toggle span').classList.add('toggle');
     document.getElementById('sidebar').classList.add('sidebarshow');
     btnst = false;
@@ -380,8 +321,6 @@ btn.onclick = function() {
     btnst = true;
   }
 }
-
- </script>
+    </script>
 </body>
-
 </html>

@@ -21,6 +21,30 @@
 
     {% include critical.css %}
 
+    /* CSS for the sidebar */
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      left: -200px;
+      margin-top: 60px;
+      transition: left 0.3s;
+      overflow: auto; /* Added overflow property */
+    }
+
+    /* CSS for the main content */
+  
+
+    /* CSS for the button */
+    .toggle-btn {
+      cursor: pointer;
+      position: fixed;
+      margin-top: 10px;
+      left: 10px;
+      font-size: 24px;
+    }
+
+
   </style>
   <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"></noscript>
