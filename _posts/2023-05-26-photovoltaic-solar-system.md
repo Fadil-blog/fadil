@@ -4,6 +4,7 @@ title: Photovoltaic solar
 featured-img: giphy.gif
 category: parent
 similar: Photovoltaic solar
+date_parent: "May 26, 2023"
 overview: Overview
 parent_url: /photovoltaic-solar-system/
 parent_nav:

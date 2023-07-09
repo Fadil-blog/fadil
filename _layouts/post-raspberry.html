@@ -399,7 +399,18 @@ a{
       <article>
 
         {{ content }}
-        
+        {% for items  in site.posts %}
+
+      {% if items.similar == "raspberry" %}
+      {% if items.category == "parent" %}
+      <span class="post-card__meta">
+      <i class="fas fa-calendar-alt"></i> <span style="font-size: 15px; font-weight: bolder;">Updated:  </span><time>{{ items.date_parent | date: date_format }}</time>
+      </span>
+        {% endif %}
+        {% endif %}
+        {% endfor %} 
+        <br>
+        <br>
         <h4><a style="color: rgb(90, 90, 90);" href="#">back to top</a></h4>
       </article>
     </div> 

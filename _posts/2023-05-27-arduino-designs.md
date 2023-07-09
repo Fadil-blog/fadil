@@ -4,7 +4,7 @@ title: Arduino Designs (Do it yourself. Feels cody!!!)
 featured-img: tumblr_oc6m5xG3NW1txeruoo2_r1_500.gif
 mathjax: true
 overview: Overview
-date_parent: "October 17, 2022"
+date_parent: "May 27, 2023"
 category: parent
 similar: arduino
 parent_url: /arduino-designs/

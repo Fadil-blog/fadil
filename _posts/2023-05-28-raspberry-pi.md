@@ -5,6 +5,7 @@ featured-img: c4b19969def51164ea4ad9a290a217bf.gif
 category: parent
 similar: raspberry
 overview: Overview
+date_parent: "May 28, 2023"
 parent_url: /raspberry-pi/
 parent_nav:
   - name: Pi

@@ -5,6 +5,7 @@ layout: post-8-bit-computers
 category: parent
 overview: Overview
 similar: 8-bit-computers
+date_parent: "May 27, 2023"
 parent_url: /8-bit-computers/
 parent_nav:
   - name: RAM
