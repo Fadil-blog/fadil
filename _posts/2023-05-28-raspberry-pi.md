@@ -9,7 +9,6 @@ parent_url: /raspberry-pi/
 parent_nav:
   - name: Pi
     permalink: /projects/raspberry-pi/pi/
-summary: This is a testing summary. It is done to give the number of text showing on the cards.
 
 ---
 

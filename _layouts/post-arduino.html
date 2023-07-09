@@ -43,6 +43,10 @@ body::-webkit-scrollbar-thumb {
 li{
   list-style-type: none;
 }
+a:active{
+  color: #101010;
+  background-color: aqua;
+}
   @media screen and (min-width: 1026px) {
     .sidebar {
       width:40%;
@@ -97,7 +101,7 @@ a{
   font-weight: bold;
 }
 .content {
-      padding-left: 32%;
+      padding-left: 30%;
       margin-top: 39px;
       padding-right: 12%;
       transition: margin-left 0.3s;
@@ -380,18 +384,18 @@ a{
 </header>
   <!-- Sidebar -->
   <div id="sidebar" class="sidebar">
-    <div class="underline-flex" >
+    <div class="underline-flex" id="myDIV" >
     {% for items  in site.posts %}
 
       {% if items.similar == "arduino" %}
       {% if items.category == "parent" %}
-        <div><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
+        <div><a class="anchor-text nav-link" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
         <br>
         <h2>{{items.overview}}</h2>
         
         {% for i in items.parent_nav %}
         
-        <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
+        <li><a class="children-nav nav-link" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
         {% endfor %} 
         {% endif %}
         {% endif %}
@@ -406,26 +410,26 @@ a{
 
         {{ content }}
 
-        {% for items  in site.posts %}
-        
-        {% if items.similar == "arduino" %}
+        {% for item  in site.posts %}
 
-        {% if items.category == "parent" %}
+        {% if item.similar == "arduino" %}
+        {% if item.category == "parent" %}
         <span class="">
-          <span style="font-size: 15px; font-weight: bold; color: #333333;"> <i class="fas fa-calendar-alt"></i> Updated: </span><time>{{ items.date_uploaded}}</time>
+          <span style="font-size: 15px; font-weight: bold; color: #333333;"> <i class="fas fa-calendar-alt"></i> Updated: </span><time>{{ item.date_parent}}</time>
         </span>
- 
-        {%  elsif items.category == "children" %}
-        <span class="">
-          <span style="font-size: 15px; font-weight: bold; color: #333333;"> <i class="fas fa-calendar-alt"></i> Updated: </span><time>{{ items.date_uploaded}}</time>
-        </span>
-      <br>
-      <br>
-        <h4><a style="color: rgb(90, 90, 90);" href="#">back to top</a></h4>
+
+       
         {% endif %}
         {% endif %}
         {% endfor %}
+       
+      <br>
+      <br>
+        <h4><a style="color: rgb(90, 90, 90);" href="#">back to top</a></h4>
+        
+     
       </article>
+      
     </div> 
   </div>
 
@@ -433,6 +437,14 @@ a{
   {% include footer.html %}
 
     <script>
+$(function() {
+   $("li").click(function() {
+      // remove classes from all
+      $("li").removeClass("active");
+      // add class to the one we clicked
+      $(this).addClass("active");
+   });
+});
           var btn = document.querySelector('.toggle');
 var btnst = true;
 btn.onclick = function() {
