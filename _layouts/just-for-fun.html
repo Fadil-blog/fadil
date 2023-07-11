@@ -59,6 +59,18 @@ for (var i = 0; i < navLinks.length; i++) {
     this.classList.add("active");
   });
 }
+// Retrieve all the links on the page
+const links = document.getElementsByTagName('a');
+
+// Loop through the links using a for loop
+for (let i = 0; i < links.length; i++) {
+  // Access the href attribute of each link
+  const href = links[i].getAttribute('href');
+
+  // Perform operations with the href value
+  console.log(href);
+}
+
 
   </script>
 </body>

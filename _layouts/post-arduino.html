@@ -43,6 +43,10 @@ body::-webkit-scrollbar-thumb {
 li{
   list-style-type: none;
 }
+.active{
+    color:aqua !important;
+  }
+
 @media screen and (min-width: 1026px) {
     .sidebar {
       width:40%;
@@ -379,13 +383,13 @@ a{
 
       {% if items.similar == "arduino" %}
       {% if items.category == "parent" %}
-        <div><a class="anchor-text" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
+        <div><a class="anchor-text" id="nav-link" href="{{ items.url | relative_url  }}"><b>{{items.title}} </a></b></div>
         <br>
         <h2>{{items.overview}}</h2>
         
         {% for i in items.parent_nav %}
         
-        <li><a class="children-nav" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
+        <li><a class="children-nav" id="nav-link" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
         {% endfor %} 
         {% endif %}
         {% endif %}
@@ -412,6 +416,9 @@ a{
         <br>
         <br>
         <h4><a style="color: rgb(90, 90, 90);" href="#">back to top</a></h4>
+        <div id="nav-link1">
+
+        </div>
       </article>
     </div> 
   </div>
@@ -419,6 +426,24 @@ a{
   {% include footer.html %}
 
     <script>
+
+
+
+
+const links = document.getElementsByTagName('a');
+let linkDomain = window.location.href;
+
+for (let i = 0; i < links.length; i++) {
+
+
+  const href = links[i].getAttribute('href');
+  if( href === "http://127.0.0.1:4000/home/arduino-designs/"){
+   alert()
+    
+  }
+  console.log(href);
+}
+   
           var btn = document.querySelector('.toggle');
 var btnst = true;
 btn.onclick = function() {
