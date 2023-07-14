@@ -249,7 +249,7 @@ a{
 }
 .content {
       margin-left: 20px;
-      margin-top: 148px;
+      margin-top: 70px;
       margin-right: 20px;
       transition: margin-left 0.3s;
     }
@@ -380,11 +380,46 @@ a{
 }
 .content {
       margin-left: 20px;
-      margin-top: 148px;
+      margin-top: 70px;
       margin-right: 20px;
       transition: margin-left 0.3s;
     }
   }
+  .sticky {
+     position: sticky;
+     top: 0;
+    background-color: hsla(0, 0%, 50%, 0.8) !important;
+     padding: 10px;
+     font-size: 20px;
+     color: white;
+     font-weight: bold;
+    text-align: right;
+}
+
+ @media screen and (max-width: 1024px) {
+    .sticky {
+      position: sticky;
+     top: 0;
+     padding: 10px;
+     font-size: 20px;
+     color: white;
+     font-weight: bold;
+    text-align: right;
+    margin-left: 40%;
+}
+ }
+ @media screen and (max-width: 600px) {
+   .sticky {
+    position: sticky;
+     top: 0;
+     padding: 10px;
+     font-size: 20px;
+     color: white;
+     font-weight: bold;
+    text-align: right;
+    margin-left: 30%;
+}
+}
 </style>
 <header class="header-1" id="header-1">
   <div class="header_in">
@@ -427,6 +462,8 @@ a{
       <span class="post-card__meta">
       <i class="fas fa-calendar-alt"></i> <span style="font-size: 15px; font-weight: bolder;">Updated:  </span><time>{{ items.date_parent | date: date_format }}</time>
       </span>
+     
+      
         {% endif %}
         {% endif %}
         {% endfor %} 
@@ -444,22 +481,6 @@ a{
 
     <script>
 
-
-
-
-const links = document.getElementsByTagName('a');
-let linkDomain = window.location.href;
-
-for (let i = 0; i < links.length; i++) {
-
-
-  const href = links[i].getAttribute('href');
-  if( href === "http://127.0.0.1:4000/home/arduino-designs/"){
-   alert()
-    
-  }
-  console.log(href);
-}
    
           var btn = document.querySelector('.toggle');
 var btnst = true;

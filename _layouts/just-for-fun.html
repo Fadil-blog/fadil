@@ -1,77 +1,47 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Active Navigation Bar</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
-</head>
 <style>
-  nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #f1f1f1;
+  .sticky {
+     position: sticky;
+     top: 0;
+     background-color: #00154f;
+     padding: 40px;
+     font-size: 30px;
+     color: white;
 }
-
-nav li {
-  display: inline;
-}
-
-nav li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333;
-}
-
-nav li a:hover {
-  background-color: #ddd;
-}
-
-nav li a.active {
-  background-color: #555;
-  color: #fff;
-}
-
 </style>
-<body>
-  <nav>
-    <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <script>
-    // Get all the navigation links
-var navLinks = document.getElementsByTagName("a");
-
-// Add an event listener to each link
-for (var i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener("click", function() {
-    // Remove the active class from all links
-    for (var j = 0; j < navLinks.length; j++) {
-      navLinks[j].classList.remove("active");
-    }
-    
-    // Add the active class to the clicked link
-    this.classList.add("active");
-  });
-}
-// Retrieve all the links on the page
-const links = document.getElementsByTagName('a');
-
-// Loop through the links using a for loop
-for (let i = 0; i < links.length; i++) {
-  // Access the href attribute of each link
-  const href = links[i].getAttribute('href');
-
-  // Perform operations with the href value
-  console.log(href);
-}
-
-
-  </script>
-</body>
-</html>
+<h2>Sticky Notes: See the Effect of the Sticky Element</h2>
+    <p>position: sticky</p>
+    <div class="sticky">This is my To-Do List!</div>
+    <p>
+    <ol>
+        <li>Call Manager </li>
+        <li>Meeting with Employees</li>
+        <li>Submit Report</li>
+        <li>Go to the Doctor</li>
+        <li>Book a flight</li>
+        <li>Go for walk.</li>
+        <li>Go for grocery.</li>
+        <li>Watch TV</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+        <li>Some text.</li>
+    </ol>
+    </p>
