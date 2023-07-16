@@ -14,7 +14,7 @@ parent_nav:
 ---
 <!-- Include the title of the project on the p tag, and include the class "sticky" -->
 
-<p class="sticky">Project name</p>
+
 
 ## Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website. Hello world, welcome to my website.
 ## Hello world, welcome to my website.
