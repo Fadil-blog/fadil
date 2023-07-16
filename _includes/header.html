@@ -65,7 +65,9 @@
   </div>
 </header>
 <script>
-      
+     
+
+ 
 
     function myButton(){    
             document.getElementById("container-toggle").style.visibility = "hidden"
@@ -73,4 +75,16 @@
   function myButton1(){      
             document.getElementById("container-toggle").style.visibility = "visible"
   }
+
+  // Define the media query
+const mediaQueryDt = window.matchMedia('(min-width: 1026px)');
+
+// Check if the media query matches
+if (mediaQueryDt.matches) {
+  // Media query matches (viewport width is at least 768px)
+  // Perform actions or apply styles for this condition
+  function myButton1(){      
+            document.getElementById("container-toggle").style.visibility = "hidden"
+  }
+} 
 </script>

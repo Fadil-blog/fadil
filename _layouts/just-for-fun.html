@@ -1,67 +1,24 @@
 <style>
-.toggle-button {
-  display: inline-block;
-  width: 30px;
-  height: 20px;
-  position: relative;
-  cursor: pointer;
-}
-
-.line {
-  position: absolute;
+    .container {
+  display: flex;
   width: 100%;
-  height: 2px;
+  justify-content: center;
+
+}
+
+.sidebar {
+flex: 0 0 200px;
   background-color: #ccc;
-  transition: transform 0.3s ease;
-  left: 0;
 }
 
-.line:nth-child(1) {
-  top: 0;
-}
-
-.line:nth-child(2) {
-  top: 50%;
-}
-
-.line:nth-child(3) {
-  bottom: 0;
-}
-
-.active .line:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.active .line:nth-child(2) {
-  opacity: 0;
-}
-
-.active .line:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-}
-.my-button{
-    padding: 10px;
-    background-color: aqua;
+.content {
+flex: auto;
+  background-color: #f0f0f0;
 }
 
 </style>
-
 <div class="container">
-    <button id="myButton" class="my-button">
-    <span id="toggleButton" class="toggle-button">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </span>
-</button>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
   </div>
   
-  
-<script>
-    const toggleButton = document.getElementById('toggleButton');
-
-toggleButton.addEventListener('click', function() {
-  toggleButton.classList.toggle('active');
-});
-
-</script>
