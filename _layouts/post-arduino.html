@@ -36,7 +36,7 @@ layout: compress
         <h2>{{items.overview}}</h2>
         
         {% for i in items.parent_nav %}
-        
+        <li class="children_category">{{i.category}}</li>
         <li><a class="children-nav" id="nav-link" href="{{ i.permalink | relative_url  }}">{{i.name}}</a></li>
         {% endfor %} 
         {% endif %}

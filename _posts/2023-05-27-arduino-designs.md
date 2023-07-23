@@ -9,6 +9,7 @@ category: parent
 similar: arduino
 parent_url: /arduino-designs/
 parent_nav:
+  - category: Phones
   - name: Arduino and solar designs 
     permalink: /projects/arduino-designs/arduino/
   - name: SSD
@@ -21,6 +22,7 @@ parent_nav:
     permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
+  - category: Phones
   - name: SSD
     permalink: /projects/arduino-designs/arduino/
   - name: Music
@@ -51,6 +53,7 @@ parent_nav:
     permalink: /projects/arduino-designs/arduino/
   - name: Arduino
     permalink: /projects/arduino-designs/arduino/
+  - category: Phones
   - name: SSD
     permalink: /projects/arduino-designs/arduino/
   - name: Music

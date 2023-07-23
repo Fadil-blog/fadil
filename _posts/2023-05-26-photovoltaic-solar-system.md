@@ -8,6 +8,7 @@ date_parent: "May 26, 2023"
 overview: Overview
 parent_url: /photovoltaic-solar-system/
 parent_nav:
+  - category: Diodes
   - name: Photodiode
     permalink: /projects/photovoltaic-solar-system/photodiode/
 ---
