@@ -881,7 +881,7 @@ footer{
 }
 @media screen and (max-width: 980px){
  
-  .hero {
+  .hero{
     margin: -1rem auto 0;
     min-height: 100em;
     width: 100%;
