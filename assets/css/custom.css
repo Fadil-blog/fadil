@@ -853,7 +853,110 @@ footer{
 #contactForm{
   margin-top: 50px;
 }
+/* @media screen and (max-width: 480px){
+ 
+  .hero {
+    margin: -1rem auto;
+    min-height: 60em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 767px){
+  
+  .hero {
+    margin: -1rem auto;
+    min-height: 60em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 980px){
+ 
+  .hero{
+    margin: -1rem auto;
+    min-height: 100em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 1025px){
 
+  .hero {
+    margin: -1rem auto;
+    min-height: 100em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1500px){
+
+  .hero {
+    margin: -1rem auto;
+    min-height: 100em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 2000px){
+
+  .hero {
+    margin: -1rem auto;
+    min-height: 100em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 2500px){
+
+  .hero {
+    margin: -1rem auto;
+    min-height: 100em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 3000px){
+
+  .hero {
+    margin: -1rem auto;
+    min-height: 100em;
+    width: 100%;
+    position: relative;
+    background-color: #dde5ea;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+} */
 @media screen and (min-width: 3500px){
 
   .hero {
